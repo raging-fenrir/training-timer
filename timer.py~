@@ -1,0 +1,12 @@
+!#/usr/bin/python
+
+from time import sleep
+import os
+
+def timer(time=50):
+    for i in range(0,time):
+        sleep(1)
+        print(i,end="")
+
+    os.system("mpv "+os.getcwd+"bell.wav")
+
